@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: url('imagenes/corazones.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+#intro {
+    position: relative;
+    top: 50px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#startButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: pink;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#carruselContainer {
+    display: none;
+    width: 100%;
+    max-width: 600px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin: 50px auto;
+}
+
+.carrusel {
+    display: flex;
+    width: 100%;
+    transition: transform 1s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: transform 1s ease-in-out;
+}
+
+.carrusel img, .carrusel video {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+.texto-slide {
+    position: absolute;
+    bottom: 60px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    max-width: 80%;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+button.play-song {
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 14px;
+    background: pink;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
